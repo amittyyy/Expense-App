@@ -1,0 +1,31 @@
+<!-- <p>
+  <button mat-button>Click Me! </button>
+</p> -->
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+   <!-- Position Column -->
+   <ng-container matColumnDef="Description">
+    <th mat-header-cell *matHeaderCellDef style="background-color:green"> Description </th>
+    <td mat-cell *matCellDef="let element"> {{element.Description}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="IsExpense">
+    <th mat-header-cell *matHeaderCellDef style="background-color:green"> Expense Type </th>
+    <td mat-cell *matCellDef="let element"> {{(element.IsExpense) ? 'Expense' : 'Income'}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Value">
+    <th mat-header-cell *matHeaderCellDef style="background-color:green"> Value </th>
+    <td mat-cell *matCellDef="let element"> {{element.Value}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Actions">
+      <th mat-header-cell *matHeaderCellDef style="background-color:green"> Actions</th>
+      <td mat-cell *matCellDef="let element">
+        <button (click)="UpdateEntry(element)" mat-raised-button color="warn"><b>Edit</b> </button>
+      </td>    
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>
