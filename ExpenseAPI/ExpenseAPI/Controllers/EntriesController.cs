@@ -13,6 +13,27 @@ namespace ExpenseAPI.Controllers
     [EnableCors("http://localhost:4200", "*", "*")]
     public class EntriesController : ApiController
     {
+        [HttpGet]
+        public IHttpActionResult GetEntry(int Id)
+        {
+            try
+            {
+                using (var context = new AppDbConext())
+                {
+                    var entry = context.entries.FirstOrDefault( e => e.Id == Id);
+                    if (entry == null) return NotFound();
+                    return Ok(entry);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+                //throw;
+            }
+
+        }
+
+        [HttpGet]
         public IHttpActionResult GetEntries()
         {
             try
@@ -74,6 +95,33 @@ namespace ExpenseAPI.Controllers
                     context.SaveChanges();
                     return Ok("Entry Updated Successfully");
                 }
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete]
+        public IHttpActionResult DeleteEntry(int id)
+        {
+            try
+            {
+                using (var context = new AppDbConext())
+                {
+                    var entry = context.entries.First(n => n.Id == id);
+                    if (entry == null)
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        context.entries.Remove(entry);
+                    }
+                    context.SaveChanges();
+                    return Ok("Entry Deleted");
+                }  
             }
             catch (Exception ex)
             {

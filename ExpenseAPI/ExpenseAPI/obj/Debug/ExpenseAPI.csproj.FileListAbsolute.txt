@@ -83,7 +83,6 @@ E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Antlr3.Runtime.pdb
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.Diagnostics.DiagnosticSource.xml
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\obj\Debug\ExpenseAPI.csprojAssemblyReference.cache
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\obj\Debug\ExpenseAPI.csproj.CoreCompileInputs.cache
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\obj\Debug\ExpenseAPI.csproj.CopyComplete
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\obj\Debug\ExpenseAPI.dll
@@ -93,3 +92,4 @@ E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\obj\Debug\ExpenseAPI.csproj.G
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.Web.Cors.dll
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.Web.Http.Cors.dll
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.Web.Http.Cors.xml
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\obj\Debug\ExpenseAPI.Migrations.useradded.resources
