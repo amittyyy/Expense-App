@@ -1,6 +1,7 @@
 <mat-card>
   <span> Create New Entry! </span>
-  <form [formGroup] = "entryForm" (ngSubmit) ="onSubmit()">
+  <form [formGroup] = "entryForm" > 
+      <!-- (ngSubmit) ="onSubmit()" -->
     <mat-form-field class="entry-field">
       <input matInput placeholder="Entry Description..." formControlName = "description">
     </mat-form-field>
@@ -15,6 +16,7 @@
       <input matInput placeholder="Entry Value" formControlName = "value">
     </mat-form-field>
 
-    <button mat-raised-button [disabled]="!entryForm.valid"> Create New! </button>
+    <button mat-raised-button [disabled]="!entryForm.valid" (click)="onSubmit()"> Create New! </button>
+    <button mat-raised-button color="warn" (click)="cancel()"> Cancel</button>
   </form>
 </mat-card>
