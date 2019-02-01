@@ -31,15 +31,17 @@ export class DeleteEntryComponent implements OnInit {
   }
 
   cancel(){
-    this.router.navigate(['/']);
+    this.router.navigate(['/entries']);    
    // console.log('Cancel clicked');
   }
 
   confirm(){
     this.service.deleteEntry(this.id).subscribe((data) =>{
       console.log(data);
-    })    
-   // console.log('Confrim clicked');
+      this.router.navigate(['/entries']);
+    }) 
+    
+   
   }
 
 }

@@ -29,11 +29,11 @@ export class NewEntryComponent  {
     console.log(this.entryForm.value);
     this.service.PostData(this.entryForm.value).subscribe((data) => {
       console.log('data -', data);
+      this.route.navigate(['/entries']);
     });
+    
   }
 
-  cancel(){
-    this.route.navigate(['/']);
-  }
+  
 
 }

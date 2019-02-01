@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { EntryService } from '../entry.service';
-import { MatTableDataSource, MatDialog } from '@angular/material';
+import { MatTableDataSource, MatDialog, MatSort, MatPaginator } from '@angular/material';
 import { EntryElement } from '../Interfaces/EntryElement';
 import { UpdateEntryComponent } from '../update-entry/update-entry.component';
 
@@ -10,10 +10,14 @@ import { UpdateEntryComponent } from '../update-entry/update-entry.component';
   styleUrls: ['./entries.component.css']
 })
 export class EntriesComponent implements OnInit {
-
+    
   
   displayedColumns: string[] = ['Description', 'IsExpense', 'Value', 'Actions']
   dataSource;
+
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+
   constructor( private service:EntryService,
                private dialog: MatDialog) { }
 
@@ -21,7 +25,14 @@ export class EntriesComponent implements OnInit {
     this.service.getAll().subscribe((data) => {
       console.log('Result - ', data );
       this.dataSource = new MatTableDataSource<EntryElement>(data as EntryElement[]);
+      this.dataSource.paginator = this.paginator;
+     
     })
+  }
+
+  applyFilter(filtervalue: string)
+  {
+    this.dataSource.filter = filtervalue.trim().toLowerCase();
   }
 
   UpdateEntry(entry)

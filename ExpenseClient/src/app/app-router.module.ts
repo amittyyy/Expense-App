@@ -5,6 +5,7 @@ import {NewEntryComponent} from './new-entry/new-entry.component';
 import {EntriesComponent} from './entries/entries.component';
 import {DeleteEntryComponent} from './delete-entry/delete-entry.component';
 import {RegisterComponent} from './register/register.component';
+import {LoginComponent} from './login/login.component';
 
 import { NgModule } from '@angular/core';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
     {path: 'new-entry', component:NewEntryComponent},
     {path: 'delete-entry/:id', component:DeleteEntryComponent},
     {path: 'register', component:RegisterComponent},
+    {path: 'login', component:LoginComponent},
 ]
 
 //Create Module

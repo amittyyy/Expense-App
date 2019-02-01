@@ -15,14 +15,20 @@ import {AuthService} from './auth.service';
 //Material Design
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatInputModule, MatCardModule, 
-        MatSelectModule, MatTableModule, MatToolbarModule, MatDialogModule,MatListModule} from '@angular/material';
-import { NewEntryComponent } from './new-entry/new-entry.component';
+        MatSelectModule, MatTableModule, MatToolbarModule,
+        MatFormFieldModule, MatDialogModule,MatListModule,MatSortModule,MatPaginatorModule,
+        MatIconModule,} from '@angular/material'; 
 
-//forms
-import {ReactiveFormsModule} from '@angular/forms';
+//Components
 import { UpdateEntryComponent } from './update-entry/update-entry.component';
 import { DeleteEntryComponent } from './delete-entry/delete-entry.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { NewEntryComponent } from './new-entry/new-entry.component';
+
+//forms
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +39,8 @@ import { RegisterComponent } from './register/register.component';
     NewEntryComponent,
     UpdateEntryComponent,
     DeleteEntryComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -42,8 +49,9 @@ import { RegisterComponent } from './register/register.component';
     //Material Desing
     BrowserAnimationsModule, MatButtonModule, MatTableModule, MatInputModule,
     MatCardModule, MatSelectModule,MatToolbarModule,MatDialogModule,MatListModule,
+    MatFormFieldModule,MatSortModule,MatPaginatorModule,MatIconModule,
 
-    AppRouterModule,
+    AppRouterModule, FormsModule,
     ReactiveFormsModule
   ],
   entryComponents: [UpdateEntryComponent],

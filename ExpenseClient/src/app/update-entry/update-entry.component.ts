@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { Type } from '../Interfaces/Type';
 import { EntryService } from '../entry.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-update-entry',
@@ -16,7 +17,8 @@ export class UpdateEntryComponent implements OnInit {
   constructor( private fb: FormBuilder,
                private dialogRef: MatDialogRef<UpdateEntryComponent>,
                @Inject(MAT_DIALOG_DATA){Description, Isexpense, Value, Id},
-               private service: EntryService) { 
+               private service: EntryService,
+               private route: Router) { 
                  
                  this.id = Id;
                  this.form = fb.group({
@@ -44,9 +46,11 @@ export class UpdateEntryComponent implements OnInit {
     //console.log("Save clicked");
     this.service.updateEntry(this.id, this.form.value).subscribe((data)=>{
       console.log("data: -", data);
+      
     })
     
     this.dialogRef.close();    
+    
 
   }
 

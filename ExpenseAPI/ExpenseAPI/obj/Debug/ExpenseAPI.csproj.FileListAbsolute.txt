@@ -93,3 +93,16 @@ E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.Web.Cors.dll
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.Web.Http.Cors.dll
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.Web.Http.Cors.xml
 E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\obj\Debug\ExpenseAPI.Migrations.useradded.resources
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\obj\Debug\ExpenseAPI.csprojAssemblyReference.cache
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.Logging.dll
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.Tokens.dll
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.Logging.pdb
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.Logging.xml
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.Tokens.pdb
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\Microsoft.IdentityModel.Tokens.xml
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.IdentityModel.Tokens.Jwt.pdb
+E:\DotNetApps\AngularJNETAPP\ExpenseAPI\ExpenseAPI\bin\System.IdentityModel.Tokens.Jwt.xml

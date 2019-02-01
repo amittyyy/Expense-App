@@ -1,0 +1,10 @@
+<mat-card>
+  <span>Sign in  </span> <br>
+  <mat-form-field>
+    <input matInput placeholder="UserName"[(ngModel)]="loginData.UserName"  Type="text">
+  </mat-form-field><br>
+  <mat-form-field>
+      <input matInput placeholder="Password" [(ngModel)]="loginData.password" Type="password">
+    </mat-form-field><br>
+    <button mat-raised-button color="primary" (click)="login()">Login</button>
+</mat-card>
